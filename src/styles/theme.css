@@ -1,0 +1,17 @@
+:root{
+  --bg: #f7f7f7;
+  --fg: #222;
+  --primary: #2c3e50;  /* gris azulado oscuro */
+  --accent: #3498db;   /* azul suave */
+  --muted: #ced4da;
+}
+html,body{background: var(--bg); color: var(--fg);}
+.navbar-brand{font-weight:700; color: var(--primary) !important;}
+a{ text-decoration: none; }
+.card{ border: 1px solid #eee; box-shadow: 0 6px 16px rgba(0,0,0,.04); }
+.btn-primary{ background: var(--accent); border-color: var(--accent); }
+.badge-neutral{ background: var(--muted); color: #333; }
+.price{ color: var(--primary); font-weight: 700; }
+.cat-thumb{ width: 100%; height: 180px; object-fit: cover; }
+.detail-img{ width: 100%; max-width: 420px; height: 420px; object-fit: cover; border-radius: .75rem; }
+.quantity{ min-width: 42px; text-align: center; }
