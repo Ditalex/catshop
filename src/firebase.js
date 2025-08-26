@@ -1,5 +1,4 @@
-
-npm
+// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
@@ -13,6 +12,11 @@ const firebaseConfig = {
   measurementId: "G-RXSRPZWM5T"
 };
 
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app);
+// Conexión a Firestore
+const db = getFirestore(app);
+
+export { db };
+

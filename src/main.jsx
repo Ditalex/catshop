@@ -4,4 +4,8 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/theme.css'
 
-createRoot(document.getElementById('root')).render(<App />)
+createRoot(document.getElementById('root')).render(
+  <CartProvider>
+    <App />
+  </CartProvider>
+);
