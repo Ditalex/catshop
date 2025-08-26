@@ -1,5 +1,6 @@
-import { db } from '../firebase.js';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
+
 
 const products = [
   { id: 'scratcher-001', title: 'Sisal Scratching Post', short: 'Poste rascador de sisal', description: 'Poste vertical de sisal resistente para afilar garras y estiramiento.', price: 29.99, stock: 20, image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=60' },
